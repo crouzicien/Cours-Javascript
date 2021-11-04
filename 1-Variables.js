@@ -21,7 +21,7 @@ let nom = "Charles"
 let age = 48
 
 // Diviser l'age de Charles par 2 et l'afficher dans la console
-
+console.log(age/2)
 // Créer une variable qui contient directement la phrase 'Charles a 48 ans' et console cette variable uniquement
 
 // Determiner combien d'années reste à Charles avant sa retraite (62ans)
