@@ -40,3 +40,22 @@ let input = {
 
 // Créer une fonction qui prend "input" en paramètre et qui retourne la data structurée comme "output"
 
+function maFunction(input){
+    let output = []
+
+    for (const key of Object.keys(input.internal_id)) {
+        const int_id = input.internal_id[key]
+        
+        let result = {
+            id : key,
+            name : input.names[int_id],
+            age : input.ages[int_id]
+        }
+        output.push(result)
+    }
+    
+    return output
+}
+
+const output = maFunction(input)
+console.log(output)
