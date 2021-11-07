@@ -7,6 +7,9 @@
     
     let liste = ["Du fromage", 87, true]
     
+    // Ajoute un element dans la liste
+    liste.push("Chaussure")
+    
  */
 
 
