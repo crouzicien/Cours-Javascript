@@ -11,20 +11,20 @@
  */
 
 let input = {
-    internal_id : {
-        1 : 356,
-        3: 456, 
+    internal_id: {
+        1: 356,
+        3: 456,
         5: 827
     },
-    names : {
-        356 : "jean",
-        827 : "mathilde",
-        456 : "etienne"
+    names: {
+        356: "jean",
+        827: "mathilde",
+        456: "etienne"
     },
-    ages : {
-        456 : 38,
-        356 : 35,
-        827 : 22
+    ages: {
+        456: 38,
+        356: 35,
+        827: 22
     }
 }
 

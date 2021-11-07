@@ -61,14 +61,14 @@ let items = [
     }
 ]
 let drinks_dispo = {
-    805 : false,
-    887 : false,
-    132 : true
+    805: false,
+    887: false,
+    132: true
 }
 let burger_dispo = {
-    225 : true,
-    887 : false,
-    132 : false
+    225: true,
+    887: false,
+    132: false
 }
 
 // let output = [

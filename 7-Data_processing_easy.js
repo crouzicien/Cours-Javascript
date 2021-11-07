@@ -26,4 +26,26 @@ let input = {
 
 
 // Créer une fonction qui prend "input" en paramètre et qui retourne la data structurée comme "output"
+function maFonction(input) {
+    let output = []
 
+    for (let i = 0; i < input.users.length; i++) {
+        const user = input.users[i];
+        const age = input.ages[i];
+
+        let id = user.split('-')[0]
+        let name = user.split('-')[1]
+
+        let element = {
+            id: id,
+            name: name,
+            age: age
+        }
+        output.push(element)
+    }
+
+    return output
+}
+
+let result = maFonction(input)
+console.log(result)
