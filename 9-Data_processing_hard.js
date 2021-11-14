@@ -16,19 +16,21 @@
  * 
  */
 
-let menus = {
+const menus = {
     20: {
         name: "Menu McChiken",
         burger: [255],
-        drink: [805, 887, 132]
+        drink: [805, 887, 132],
+        price : 9.5
     },
     33: {
         name: "Menu Wrap",
         burger: [132, 887],
-        drink: [887, 132, 805]
+        drink: [887, 132, 805],
+        price : 8.3
     }
 }
-let items = [
+const items = [
     {
         id: 225,
         name: "Burger McChicken",
@@ -60,12 +62,12 @@ let items = [
         step: 'burger'
     }
 ]
-let drinks_dispo = {
+const drinks_dispo = {
     805: false,
     887: false,
     132: true
 }
-let burger_dispo = {
+const burger_dispo = {
     225: true,
     887: false,
     132: false
@@ -108,4 +110,16 @@ let burger_dispo = {
 
 
 // Créer une fonction qui prend "menus", "items", "drinks_dispo" et "burger_dispo" en paramètre et qui retourne la data structurée comme "output"
+function maFonction(menus, items, drinks_dispo, burger_dispo){
+    for (const key of Object.keys(menus)) {
+        const menu = menus[key]
+        let result = {
+            id : key,
+            name : menu.name,
+            price : menu.price
+        }
+        console.log(menu)
+    }
+}
 
+maFonction(menus, items, drinks_dispo, burger_dispo)
